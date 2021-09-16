@@ -3,7 +3,7 @@ def fetch_all(mysql, table_name):
 	cursor.execute("SELECT * FROM " + table_name)
 	data = cursor.fetchall()
 	if data is None:
-		return "Problem!"
+		return "Problem!"  
 	else:
 		return data
 
